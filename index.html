@@ -36,12 +36,12 @@ https://www.tooplate.com/view/2115-marvel
 
 -->
   </head>
-  <body  class="">
+  <body class="">
 	
     <!-- MENU -->
 
 	
-    <nav class="navbar navbar-expand-sm navbar-light headroom headroom--not-bottom headroom--not-top headroom--unpinned">
+    <nav class="navbar navbar-expand-sm navbar-light headroom headroom--not-top headroom--pinned headroom--not-bottom">
         <div class="container">
             <a class="navbar-brand" href="index.html"><i class="bx bx-code-alt"></i>code().</a>
 
@@ -215,15 +215,62 @@ https://www.tooplate.com/view/2115-marvel
 				<!-- Agregar más imágenes y descripciones aquí -->
 			  </div>
 			  <!-- Agregar más imágenes y descripciones aquí -->
-			</div>
 			
-		  </div>
+			
+		  
 		</section>
 
 
 
 		
-		<section class="pricing-plans">
+		<section class="image-section bg-white">
+
+			  <div class="container">
+				<div class="row">
+				  <div class="col-md-6 image">
+					<img src="images/modern-lcadsfsdfaptop-with-blank-white-screen-wooden-table.png" alt="Imagen 1">
+				  </div>
+				  <div class="col-md-6 description">
+					<h2>Sitio web Pizza Toon</h2>
+					<p> Este es un sitio web sobre una empresa que se dedica a hacer Pizzas en eventos y cumpleaños.
+						Cada página, cada elemento de esta página web ha sido diseñado pensando en ofrecer la mejor experiencia a los visitantes. Desde los detalles visuales hasta la disposición intuitiva</p>
+					<a href="https://jolly-cannoli-544250.netlify.app/" target="_blank" class="btn btn-primary">Ver Página</a>
+				  </div>
+				</div>
+
+
+			
+				
+				<!-- Agregar más imágenes y descripciones aquí -->
+			  </div>
+			  <!-- Agregar más imágenes y descripciones aquí -->
+			
+			
+		  
+		</section><section class="image-section bg-white">
+
+			  <div class="container">
+				<div class="row">
+				  <div class="col-md-6 image">
+					<img src="images/modern-laptop-with-blank-white-screen-wooden-table (1).png" alt="Imagen 1">
+				  </div>
+				  <div class="col-md-6 description">
+					<h2>Sitio web Mundo Tropical</h2>
+					<p> Este es un sitio web un puesto de frutas y verduras <br> Cada página, cada elemento de esta página web ha sido diseñado pensando en ofrecer la mejor experiencia a los visitantes. Desde los detalles visuales hasta la disposición intuitiva</p>
+					<a href="https://deluxe-bavarois-618e4b.netlify.app/" target="_blank" class="btn btn-primary">Ver Página</a>
+				  </div>
+				</div>
+
+
+			
+				
+				<!-- Agregar más imágenes y descripciones aquí -->
+			  </div>
+			  <!-- Agregar más imágenes y descripciones aquí -->
+			
+			
+		  
+		</section><section class="pricing-plans">
 		
 			<div class="pricing-card basic">
 			  <div class="heading">
@@ -322,7 +369,7 @@ https://www.tooplate.com/view/2115-marvel
 
   
    
-  </div>
+  
   
   
 
@@ -373,5 +420,44 @@ https://www.tooplate.com/view/2115-marvel
 
 
 
-</body>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</div></div></section></body>
 </html>

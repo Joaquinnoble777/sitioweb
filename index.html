@@ -1,634 +1,463 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <style>
-            /*Estilos generales del boton whatsapp*/
-.whatsapp-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 9999;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background-color: #25D366;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  animation: breathe 2s ease-in-out infinite;
-}
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-/*Estilos solo al icono whatsapp*/
-.whatsapp-btn i {
-  color: #fff;
-  font-size: 24px;
-  animation: beat 2s ease-in-out infinite;
-  text-decoration: none;
-}
 
-/*Estilos con animation contorno respirando*/
-@keyframes breathe {
-  0% {
-    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
-  }
-  70% {
-    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
-  }
-  100% {
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-  }
-}
 
-/*Estilos de animacion del icono latiendo*/
-@keyframes beat {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-        </style>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
-<a href="https://wa.me/59899946914?text=Quiero comprar" target=”_blank” class="whatsapp-btn">
-  <i class="bi bi-whatsapp"></i>
-</a>
-
-<script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "Product",
-      "name": "Creatina Black Skull",
-      "image": "https://tupagina.com/img/blackskull.png",
-      "description": "Creatina en polvo 300g de alta calidad para mejorar el rendimiento físico.",
-      "brand": {
-        "@type": "Brand",
-        "name": "Black Skull"
-      },
-      "offers": {
-        "@type": "Offer",
-        "url": "https://tupagina.com/productos/creatina-black-skull",
-        "priceCurrency": "MXN",
-        "price": "800.00",
-        "priceValidUntil": "2025-12-31",
-        "itemCondition": "http://schema.org/NewCondition",
-        "availability": "http://schema.org/InStock"
-      }
-    }
-    </script>
     
-<!-- Metaetiquetas para mejorar el SEO -->
-<meta name="description" content="FitShop es una tienda online especializada en suplementos deportivos. Compra creatina, proteínas, BCAA y más productos para tu rendimiento.">
-<meta name="keywords" content="suplementos deportivos, tienda online, proteína, creatina, BCAA, nutrición deportiva, pre-entrenamiento, fitshop">
-<meta name="robots" content="index, follow">
-<meta property="og:title" content="FitShop - Suplementos Deportivos y Accesorios Fitness">
-<meta property="og:description" content="Compra suplementos deportivos y accesorios fitness en FitShop. Proteínas, creatina, shakers y más para mejorar tu rendimiento.">
-<meta property="og:image" content="https://tupagina.com/img/banner.jpg">
-<meta property="og:url" content="https://tupagina.com">
-<meta property="og:type" content="website">
+	<title>Joaquín Noble - DESARROLLADOR WEB </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/unicons.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
-        <meta property="og:image" content="https://www.themuscleprogram.com/wp-content/uploads/2018/02/Mass-Builder-Supplements.jpg">
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <meta property="og:title" content="Tienda Online de Suplementos Deportivos, Ropa y Accesorios | FitShop - Proteínas, Creatinas y Más" />
-<meta property="og:image" content="https://via.placeholder.com/500x300?text=FitShop+Suplementos+Deportivos" />
-<meta property="og:description" content="Compra los mejores suplementos deportivos, ropa fitness, accesorios para entrenar y productos de nutrición en FitShop. Encuentra proteínas, creatinas, pre-entrenos y más, con envío rápido y seguro." />
+	
 
-        <title>Nutri gym Tienda de sumplementos deportivos</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        <link rel="dns-prefetch" href="//s0.wp.com">
+	<!-- MAIN STYLE -->
+    <link rel="stylesheet" href="css/tooplate-style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--flaticon -->
 
-    </head>
-    <body>
-     
-     <!-- Header-->
-<header class="bg-dark py-5" style="background-image: url('/img/template.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
-    <div class="container px-4 px-lg-5 my-5">
-        <div class="text-center text-white">
-            <h1 style="color: black;" class="display-4 fw-bolder">Tienda Online</h1>
-            <h6 style="color: black;" class="display-4 fw-bolder">Sumplementos deportivos</h6>
-
-        </div>
-    </div>
-</header>
-
-<!-- Navigation-->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container px-4 px-lg-5">
-        <a class="navbar-brand" href="#!">Nutri Gym</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Inicio</a></li>
-                <li class="nav-item"><a class="nav-link" href="#!">Nosotros</a></li>
-        
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<!-- Sección sobre nosotros -->
-<section class="py-5">
-    <div class="container px-4 px-lg-5">
-        <div class="row align-items-center">
-            <div class="col-lg-6">
-                <img class="img-fluid rounded mb-4 mb-lg-0" src="/img/119952879_662032898048441_2776755001304710510_n.jpg" alt="Sobre Nosotros"/>
-            </div>
-            <div class="col-lg-6">
-                <h2 class="display-4">¿Quiénes somos?</h2>
-                <br>
-                <h5>FitShop es una tienda online que ofrece productos especializados para la vida fitness. Nuestra misión es brindar a los deportistas y personas activas los mejores artículos para su rendimiento físico y bienestar.</h5>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Sección de productos -->
-<!-- Sección de productos -->
-<div class="container mt-5">
-    <h2 class="text-center mb-4">Nuestros Productos</h2>
+<link rel="stylesheet" href="css/style.css">
     
-    <!-- Primera fila de productos -->
-    <div class="row row-cols-2 row-cols-md-4 g-3">
+<!--
+
+Tooplate 2115 Marvel
+
+https://www.tooplate.com/view/2115-marvel
+
+-->
+  </head>
+  <body class="">
+	
+    <!-- MENU -->
+
+	
+    <nav class="navbar navbar-expand-sm navbar-light headroom headroom--not-top headroom--pinned headroom--not-bottom">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="bx bx-code-alt"></i>code().</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link"><span data-hover="yo soy().">yo soy().</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projectos" class="nav-link"><span data-hover="Projectos().">Projectos().</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#resume" class="nav-link"><span data-hover="Resume().">Servicios().</span></a>
+                    </li>
+
+                </ul>
+
+                <ul class="navbar-nav ml-lg-auto">
+                    <div class="ml-lg-4">
+                      <div class="color-mode d-lg-flex justify-content-center align-items-center">
+                        <i class="color-mode-icon"></i>
+                        Color mode
+                      </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ABOUT -->
+	<section class="about full-screen d-lg-flex justify-content-center align-items-center" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
+                    <div class="about-text">
+                        <h1 class="animated animated-text">
+                            <span class="mr-2">Aquí verás páginas web para</span>
+                            <div class="animated-info">
+                                <span class="animated-item">empresas</span>
+                                <span class="animated-item">negocios</span>
+                                <span class="animated-item">proyectos</span>
+                            </div>						
+                        </h1>
+                        <div class="custom-btn-group mt-4">
+                            <!-- Botones u otros elementos -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	<div class="container mt-5">
+		<div class="row align-items-center">
+			<div class="col-md-4">
+				<img src="/images/project/template.png" alt="Quienes somos" class="img-fluid rounded">
+			</div>
+			<div class="col-md-8">
+				<h1> ¿Que hacemos?</h1>
+				<p> • Creamos soluciones digitales para llegar a mas clientes</p>
+				<h1> Como lo hacemos?</h1>
+				<p>• Creando tu sitio web a tu medida y administrándolo</p>
+
+			</div>
+		</div>
+	</div>
+	
+	
+
+		<section>
+
+			<div class="container py-5">
+				<h1 class="text-center mb-4">Proyectos creados hasta ahora</h1>
+				<div class="row">
+				  <div class="col-md-3 mb-4">
+					<div class="gallery-item">
+					  <img src="/images/project/369908160_122101281416018513_5245766314265297208_n.jpg" alt="Proyecto 1">
+					  <div class="overlay">
+						<p>CAIRO SERVICIOS DIGITALES</p>
+					  </div>
+					</div>
+				  </div>
+				  <div class="col-md-3 mb-4">
+					<div class="gallery-item">
+					  <img src="/images/project/369961868_122101282076018513_5614250853364599400_n.jpg" alt="Proyecto 2">
+					  <div class="overlay">
+						<p>CAIRO SERVICIOS DIGITALES</p>
+					  </div>
+					</div>
+				  </div>
+				  <div class="col-md-3 mb-4">
+					<div class="gallery-item">
+					  <img src="/images/project/369966627_122101281614018513_379293801176956123_n.jpg" alt="Proyecto 3">
+					  <div class="overlay">
+						<p>CAIRO SERVICIOS DIGITALES</p>
+					  </div>
+					</div>
+				  </div>
+				  <div class="col-md-3 mb-4">
+					<div class="gallery-item">
+					  <img src="/images/project/370231621_122101281434018513_4635385300098429980_n.jpg" alt="Proyecto 4">
+					  <div class="overlay">
+						<p>CAIRO SERVICIOS DIGITALES</p>
+					  </div>
+					</div>
+				  </div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 mb-4">
+					  <div class="gallery-item">
+						<img src="/images/project/Screenshot_2023-01-20-21-29-19-402_com.instagram.android.jpg" alt="Proyecto 1">
+						<div class="overlay">
+						  <p>CAIRO SERVICIOS DIGITALES</p>
+						</div>
+					  </div>
+					</div>
+					<div class="col-md-3 mb-4">
+					  <div class="gallery-item">
+						<img src="/images/project/Screenshot_2023-01-20-21-29-28-342_com.instagram.android.jpg" alt="Proyecto 2">
+						<div class="overlay">
+						  <p>CAIRO SERVICIOS DIGITALES</p>
+						</div>
+					  </div>
+					</div>
+					<div class="col-md-3 mb-4">
+					  <div class="gallery-item">
+						<img src="/images/project/Screenshot_2023-01-22-01-32-14-453_com.whatsapp.jpg" alt="Proyecto 3">
+						<div class="overlay">
+						  <p>CAIRO SERVICIOS DIGITALES</p>
+						</div>
+					  </div>
+					</div>
+					<div class="col-md-3 mb-4">
+					  <div class="gallery-item">
+						<img src="/images/project/Screenshot_2023-01-22-01-32-18-579_com.whatsapp.jpg" alt="Proyecto 4">
+						<div class="overlay">
+						  <p>CAIRO SERVICIOS DIGITALES</p>
+						</div>
+					  </div>
+					</div>
+				  </div>
+			  </div>
+			  
+			 
+		</section>
+
+
+	    <!--PAGINAS WEB CREADAS-->
+		<section class="image-section bg-white">
+
+			  <div class="container">
+				<div class="row">
+				  <div class="col-md-6 image">
+					<img src="images/modern-laptop-with-blank-white-screen-wooden-table.png" alt="Imagen 1">
+				  </div>
+				  <div class="col-md-6 description">
+					<h2>Sitio web Tacuarembó</h2>
+					<p> Este es un sitio web sobre Tacuarembo y sus puntos turisticos <br> Cada página, cada elemento de esta página web ha sido diseñado pensando en ofrecer la mejor experiencia a los visitantes. Desde los detalles visuales hasta la disposición intuitiva</p>
+					<a href="https://resplendent-pavlova-89465a.netlify.app/" target="_blank" class="btn btn-primary">Ver Página</a>
+				  </div>
+				</div>
+
+
+			
+				
+				<!-- Agregar más imágenes y descripciones aquí -->
+			  </div>
+			  <!-- Agregar más imágenes y descripciones aquí -->
+			
+			
+		  
+		</section>
+
+
+
+		
+		<section class="image-section bg-white">
+
+			  <div class="container">
+				<div class="row">
+				  <div class="col-md-6 image">
+					<img src="images/modern-lcadsfsdfaptop-with-blank-white-screen-wooden-table.png" alt="Imagen 1">
+				  </div>
+				  <div class="col-md-6 description">
+					<h2>Sitio web Pizza Toon</h2>
+					<p> Este es un sitio web sobre una empresa que se dedica a hacer Pizzas en eventos y cumpleaños.
+						Cada página, cada elemento de esta página web ha sido diseñado pensando en ofrecer la mejor experiencia a los visitantes. Desde los detalles visuales hasta la disposición intuitiva</p>
+					<a href="https://jolly-cannoli-544250.netlify.app/" target="_blank" class="btn btn-primary">Ver Página</a>
+				  </div>
+				</div>
+
+
+			
+				
+				<!-- Agregar más imágenes y descripciones aquí -->
+			  </div>
+			  <!-- Agregar más imágenes y descripciones aquí -->
+			
+			
+		  
+		</section><section class="image-section bg-white">
+
+			  <div class="container">
+				<div class="row">
+				  <div class="col-md-6 image">
+					<img src="images/modern-laptop-with-blank-white-screen-wooden-table (1).png" alt="Imagen 1">
+				  </div>
+				  <div class="col-md-6 description">
+					<h2>Sitio web Mundo Tropical</h2>
+					<p> Este es un sitio web un puesto de frutas y verduras <br> Cada página, cada elemento de esta página web ha sido diseñado pensando en ofrecer la mejor experiencia a los visitantes. Desde los detalles visuales hasta la disposición intuitiva</p>
+					<a href="https://deluxe-bavarois-618e4b.netlify.app/" target="_blank" class="btn btn-primary">Ver Página</a>
+				  </div>
+				</div>
+
+
+			
+				
+				<!-- Agregar más imágenes y descripciones aquí -->
+			  </div>
+			  <!-- Agregar más imágenes y descripciones aquí -->
+			
+			
+		  
+		</section><section class="pricing-plans">
+		
+			<div class="pricing-card basic">
+			  <div class="heading">
+			
+			  </div>
+			  <p class="price">
+				$1000
+			  </p><h1>Básico</h1>
+		
+			  
+			  <ul class="features">
+				<li>
+				  <i class="fa-solid fa-check"></i>
+				  <strong>Creación sitio web</strong>
+				</li>
+				<li>
+					<i class="fa-solid fa-check"></i>
+					<strong>mantenimiento semanal</strong>
+				  </li>
+				<li>
+				  <i class="fa-solid fa-check"></i>
+				  <strong>5 IMAGENES</strong> 
+				</li>
+				<li>
+				  <i class="fa-solid fa-check"></i>
+				  <strong>Publicaciones diarias en 5 grupos de Facebook</strong>
+				</li>
+
+				
+				
+			  </ul>
+			  <button class="cta-btn">ME INTERESA</button>
+			</div>
+			<div class="pricing-card standard">
+			  <div class="heading">
+			  </div>
+			  <p class="price">
+				$2500
+				</p><h1>Medio</h1>
+			  <p></p>
+			  <ul class="features">
+				<li>
+					<i class="fa-solid fa-check"></i>
+					<strong>Creacion de sitio web</strong>
+				  </li>
+
+				  <li>
+					<i class="fa-solid fa-check"></i>
+					<strong>mantenimiento anual</strong>
+				  </li>
+				  <li>
+					
+					<i class="fa-solid fa-check"></i>
+					<strong>10 IMAGENES</strong> 
+				  </li>
+				  <li>
+					<i class="fa-solid fa-check"></i>
+					<strong>Publicaciones diarias en 10 grupos de Facebook</strong>
+				  </li>
+			  <button class="cta-btn">ME INTERESA</button>
+			</ul></div>
+			<div class="pricing-card basic">
+				<div class="heading">
+			  
+				</div>
+				<p class="price">
+				  $2000
+				</p><h1>Completo</h1>
+		  
+				
+				<ul class="features">
+				  <li>
+					<i class="fa-solid fa-check"></i>
+					<strong>Creacion de sitio web</strong>
+				  </li>
+				  <li>
+					<i class="fa-solid fa-check"></i>
+					<strong>mantenimiento semanal</strong>
+				  </li>
+				  <li>
+					<i class="fa-solid fa-check"></i>
+					<strong>20 IMAGENES</strong> 
+				  </li>
+				  <li>
+					<i class="fa-solid fa-check"></i>
+					<strong>Publicaciones diarias en 20 grupos de Facebook</strong>
+				  </li>
+				  
+				</ul>
+				<button class="cta-btn">ME INTERESA</button>
+			  </div>
+		  </section>
+	
+
+	
+
+  
+   
+  
+  
+  
+
+	
+	
         
-        <!-- Producto 1 -->
-        <div class="col">
-            <div class="card h-100 text-center">
-                <img src="/img/blackskull.png" class="card-img-top" alt="Producto 1" style="width: 30%; margin: auto;">
-                <div class="card-body">
-                    <h6 class="card-title">Black Skull</h6>
-                    <p class="card-text">Creatina en polvo 300g.</p>
-                    <p class="fw-bold">$800</p>
-                    <a href="#" class="btn btn-primary btn-sm">Comprar</a>
-                </div>
-            </div>
-        </div>
+    <section class="resume py-5 d-lg-flex justify-content-center align-items-center" id="resume">
+       
+      <div class="container">
+            <div class="row">
+              
+                
+           
 
-        <!-- Producto 2 -->
-        <div class="col">
-            <div class="card h-100 text-center">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_652251-MLU72846651845_112023-O.webp" class="card-img-top" alt="Producto 2" style="width: 30%; margin: auto;">
-                <div class="card-body">
-                    <h6 class="card-title">Creatina Monohidratada</h6>
-                    <p>Suplemento Cibeles de 350g
-                    </p>
-                    <p class="card-text">Aumenta tu fuerza y resistencia.</p>
-                    <p class="fw-bold">$1.999</p>
-                    <a href="#" class="btn btn-primary btn-sm">Comprar</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Producto 3 -->
-        <div class="col">
-            <div class="card h-100 text-center">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_828741-MLA80534842034_112024-O.webp" class="card-img-top" alt="Producto 3" style="width: 30%; margin: auto;">
-                <div class="card-body">
-                    <h6 class="card-title">Suplemento Cibeles de 500g
-                    </h6>
-                    <p class="card-text">Recuperación muscular rápida.</p>
-                    <p class="fw-bold">$2.500</p>
-                    <a href="#" class="btn btn-primary btn-sm">Comprar</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Producto 4 -->
-        <div class="col">
-            <div class="card h-100 text-center">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_664019-MLA74650428930_022024-O.webp" class="card-img-top" alt="Producto 4" style="width: 30%; margin: auto;">
-                <div class="card-body">
-                    <h6 class="card-title">Proteína Whey</h6>
-                    <p>Suplemento Gold Nutrition sabor vainilla de 908g</p>
-                    <p class="fw-bold">$2.500</p>
-                    <a href="#" class="btn btn-primary btn-sm">Comprar</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Segunda fila de productos -->
-    <div class="row row-cols-2 row-cols-md-4 g-3 mt-2">
-        
-        <!-- Producto 5 -->
-        <div class="col">
-            <div class="card h-100 text-center">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_774777-MLU74245612595_012024-O.webp" class="card-img-top" alt="Producto 5" style="width: 30%; margin: auto;">
-                <div class="card-body">
-                    <h6 class="card-title">L-Glutamina</h6>
-                    <p class="card-text">Recuperación y sistema inmune.</p>
-                    <p>Glutamine 300g - Gold Nutrition Sabor Natural</p>
-                    <p class="fw-bold">$2.500</p>
-                    <a href="#" class="btn btn-primary btn-sm">Comprar</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Producto 6 -->
-        <div class="col">
-            <div class="card h-100 text-center">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_741055-MLU79116144062_092024-O.webp" class="card-img-top" alt="Producto 6" style="width: 30%; margin: auto;">
-                <div class="card-body">
-                    <h6 class="card-title">Pre-entrenamiento</h6>
-                    <p class="card-text">Energía y enfoque total.</p>
-                    <p>Suplemento en polvo Dark Lab de Venom Underground Pre Workout de 300 g</p>
-                    <p class="fw-bold">$1.500</p>
-                    <a href="#" class="btn btn-primary btn-sm">Comprar</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Producto 7 -->
-        <div class="col">
-            <div class="card h-100 text-center">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_604718-MLU69921889081_062023-O.webp" class="card-img-top" alt="Producto 7" style="width: 30%; margin: auto;">
-                <div class="card-body">
-                    <h6 class="card-title">Óxido Nítrico</h6>
-                    <p>Ena Suplemento Dietario Oxido Nitrico Sabor Naranja X 150 Gr Sabor Naranja</p>
-                    <p class="card-text">Mejora la circulación y el bombeo.</p>
-                    <p class="fw-bold">$2.000</p>
-                    <a href="#" class="btn btn-primary btn-sm">Comprar</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Producto 8 -->
-        <div class="col">
-            <div class="card h-100 text-center">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_745100-MLU75849536273_042024-O.webp" class="card-img-top" alt="Producto 8" style="width: 30%; margin: auto;">
-                <div class="card-body">
-                    <h6 class="card-title">Multivitamínico</h6>
-                    <p class="card-text">Vitaminas esenciales para el día.</p>
-                    <p>Vigor Vitalidad Energía Inmunidad Músculos Testo Fertilidad Sabor Sin Sabor</p>
-                    <p class="fw-bold">$600</p>
-                    <a href="#" class="btn btn-primary btn-sm">Comprar</a>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-
-
-
-<!-- consejos-->
  
 
-<div class="container mt-5">
-    <div class="row align-items-center">
-        <!-- Imagen lateral -->
-        <div class="col-md-6">
-            <img src="https://i0.wp.com/blogedenred.com.uy/wp-content/uploads/2024/12/Los-multiples-beneficios-para-la-salud-de-la-Creatina.jpg?w=1024&ssl=1" class="img-fluid rounded" alt="Creatina">
-        </div>
-        
-        <!-- Texto con consejos -->
-        <div class="col-md-6">
-            <h2>Consejos y Recomendaciones para el Uso de Creatina</h2>
-            <p class="text-muted">La creatina es uno de los suplementos más estudiados y efectivos para mejorar el rendimiento deportivo y la recuperación muscular.</p>
 
-            <h5>🔹 ¿Cómo tomarla?</h5>
-            <ul>
-                <li><strong>Dosis recomendada:</strong> 3-5g diarios.</li>
-                <li><strong>Fase de carga:</strong> Opcional. 20g diarios divididos en 4 tomas por 5-7 días.</li>
-                <li><strong>Con qué mezclarla:</strong> Agua, jugo o batidos de proteína. Mejor con una fuente de carbohidratos.</li>
-                <li><strong>Mejor momento para tomarla:</strong> Después del entrenamiento o en cualquier momento del día.</li>
-            </ul>
+<!-- /.container -->
 
-            <h5>🔹 Beneficios</h5>
-            <ul>
-                <li>Aumenta la fuerza y resistencia.</li>
-                <li>Mejora la recuperación muscular.</li>
-                <li>Ayuda a la hidratación celular.</li>
-                <li>Favorece la ganancia de masa muscular.</li>
-            </ul>
-
-            <h5>🔹 Recomendaciones</h5>
-            <ul>
-                <li>Bebe suficiente agua para evitar deshidratación.</li>
-                <li>No es necesario hacer ciclos, la puedes tomar de forma continua.</li>
-                <li>Asegúrate de usar <strong>creatina monohidratada</strong> de buena calidad.</li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-<!--consejos -->
-
-<!--shakers -->
-
-<!-- Sección de Shakers y Botellas para Batidos -->
-<div class="container mt-5">
-    <h2 class="text-center mb-4">Shakers y Botellas para Batidos</h2>
-    
-    <!-- Primera fila de productos -->
-    <div class="row row-cols-2 row-cols-md-4 g-3">
-        
-        <!-- Producto 1 -->
-        <div class="col">
-            <div class="card h-100 text-center">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_954524-MLA81277502103_122024-O.webp" class="card-img-top" alt="Shaker 1" style="width: 30%; margin: auto;">
-                <div class="card-body">
-                    <h6 class="card-title">Shaker Clásico</h6>
-                    <p class="card-text">Capacidad de 600ml, ideal para batidos.</p>
-                    <p class="fw-bold">$9.99</p>
-                    <a href="#" class="btn btn-primary btn-sm">Comprar</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Producto 2 -->
-        <div class="col">
-            <div class="card h-100 text-center">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_954524-MLA81277502103_122024-O.webp" class="card-img-top" alt="Shaker 2" style="width: 30%; margin: auto;">
-                <div class="card-body">
-                    <h6 class="card-title">Shaker con Compartimento</h6>
-                    <p class="card-text">Incluye espacio para proteína en polvo.</p>
-                    <p class="fw-bold">$14.99</p>
-                    <a href="#" class="btn btn-primary btn-sm">Comprar</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Producto 3 -->
-        <div class="col">
-            <div class="card h-100 text-center">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_954524-MLA81277502103_122024-O.webp" class="card-img-top" alt="Shaker 3" style="width: 30%; margin: auto;">
-                <div class="card-body">
-                    <h6 class="card-title">Shaker Acero Inoxidable</h6>
-                    <p class="card-text">Mantiene la temperatura de tu batido.</p>
-                    <p class="fw-bold">$19.99</p>
-                    <a href="#" class="btn btn-primary btn-sm">Comprar</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Producto 4 -->
-        <div class="col">
-            <div class="card h-100 text-center">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_954524-MLA81277502103_122024-O.webp" class="card-img-top" alt="Shaker 4" style="width: 30%; margin: auto;">
-                <div class="card-body">
-                    <h6 class="card-title">Botella Mezcladora</h6>
-                    <p class="card-text">Con bola mezcladora para mejor disolución.</p>
-                    <p class="fw-bold">$12.99</p>
-                    <a href="#" class="btn btn-primary btn-sm">Comprar</a>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <!-- Segunda fila de productos -->
-    <div class="row row-cols-2 row-cols-md-4 g-3 mt-2">
-        
-        <!-- Producto 5 -->
-        <div class="col">
-            <div class="card h-100 text-center">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_954524-MLA81277502103_122024-O.webp" class="card-img-top" alt="Shaker 5" style="width: 30%; margin: auto;">
-                <div class="card-body">
-                    <h6 class="card-title">Botella Antiderrame</h6>
-                    <p class="card-text">Diseño hermético y resistente.</p>
-                    <p class="fw-bold">$11.99</p>
-                    <a href="#" class="btn btn-primary btn-sm">Comprar</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Producto 6 -->
-        <div class="col">
-            <div class="card h-100 text-center">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_954524-MLA81277502103_122024-O.webp" class="card-img-top" alt="Shaker 6" style="width: 30%; margin: auto;">
-                <div class="card-body">
-                    <h6 class="card-title">Shaker Pro</h6>
-                    <p class="card-text">Tapa a prueba de fugas y 700ml.</p>
-                    <p class="fw-bold">$16.99</p>
-                    <a href="#" class="btn btn-primary btn-sm">Comprar</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Producto 7 -->
-        <div class="col">
-            <div class="card h-100 text-center">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_954524-MLA81277502103_122024-O.webp" class="card-img-top" alt="Shaker 7" style="width: 30%; margin: auto;">
-                <div class="card-body">
-                    <h6 class="card-title">Botella Deportiva</h6>
-                    <p class="card-text">Ideal para gimnasio y actividades.</p>
-                    <p class="fw-bold">$8.99</p>
-                    <a href="#" class="btn btn-primary btn-sm">Comprar</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Producto 8 -->
-        <div class="col">
-            <div class="card h-100 text-center">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_954524-MLA81277502103_122024-O.webp" class="card-img-top" alt="Shaker 8" style="width: 30%; margin: auto;">
-                <div class="card-body">
-                    <h6 class="card-title">Shaker de Cristal</h6>
-                    <p class="card-text">Material resistente y ecológico.</p>
-                    <p class="fw-bold">$22.99</p>
-                    <a href="#" class="btn btn-primary btn-sm">Comprar</a>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-
-<!-- shakers-->
-
-
-<!-- alimentacion-->
-<div class="container mt-5">
-    <div class="row align-items-center">
-        <!-- Imagen lateral -->
-        <div class="col-md-6">
-            <img src="https://i.pinimg.com/736x/72/d9/af/72d9af964d384fc2a16fd087c1062a7c.jpg" class="img-fluid rounded" alt="Alimentación Saludable">
-        </div>
-        
-        <!-- Texto con consejos -->
-        <div class="col-md-6">
-            <h2>Consejos y Recomendaciones para una Alimentación Saludable</h2>
-            <p class="text-muted">Una buena alimentación es clave para mejorar el rendimiento físico, la salud y alcanzar tus objetivos fitness.</p>
-
-            <h5>🍏 Principios Básicos</h5>
-            <ul>
-                <li><strong>Balance de macronutrientes:</strong> Consume proteínas, carbohidratos y grasas en proporciones adecuadas.</li>
-                <li><strong>Hidratación:</strong> Bebe al menos 2-3 litros de agua al día.</li>
-                <li><strong>Calidad sobre cantidad:</strong> Prioriza alimentos naturales en lugar de ultraprocesados.</li>
-                <li><strong>Frecuencia de comidas:</strong> Come cada 3-4 horas para mantener energía estable.</li>
-            </ul>
-
-            <h5>🥩 Fuentes de Proteínas</h5>
-            <ul>
-                <li>Pollo, pavo, carne magra.</li>
-                <li>Pescado y mariscos.</li>
-                <li>Huevos y claras de huevo.</li>
-                <li>Legumbres y tofu.</li>
-            </ul>
-
-            <h5>🍚 Fuentes de Carbohidratos</h5>
-            <ul>
-                <li>Arroz integral, quinoa, avena.</li>
-                <li>Papas, batatas, legumbres.</li>
-                <li>Frutas y verduras frescas.</li>
-                <li>Pan y pasta integral.</li>
-            </ul>
-
-            <h5>🥑 Fuentes de Grasas Saludables</h5>
-            <ul>
-                <li>Aguacate y aceite de oliva.</li>
-                <li>Frutos secos y semillas.</li>
-                <li>Pescados grasos como salmón.</li>
-                <li>Mantequilla de maní o almendras.</li>
-            </ul>
-
-            <h5>⚡ Recomendaciones Finales</h5>
-            <ul>
-                <li>Evita azúcares refinados y exceso de harinas blancas.</li>
-                <li>Planifica tus comidas para evitar opciones poco saludables.</li>
-                <li>Escucha a tu cuerpo y ajusta tu dieta según tus necesidades.</li>
-            </ul>
-
-            <!-- Sección del libro -->
-            <div class="mt-4 p-3 border rounded bg-light">
-                <h5>📖 ¿Te gustaría aprender más?</h5>
-                <p>Si te interesa un libro con <strong>recetas saludables y fáciles</strong> de preparar, haz clic en el botón de abajo.</p>
-                <a href="#" class="btn btn-success">Me interesa el libro</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- alimentacion-->
-
-
-
-
-<!-- Sección de Testimonios -->
-<section class="py-5 bg-light">
-    <div class="container">
-        <h2 class="text-center mb-4">Testimonios de Nuestros Clientes</h2>
-        <div class="row">
-            <!-- Testimonio 1 -->
-            <div class="col-lg-4 mb-4">
-                <div class="card text-center shadow-sm">
-                    <div class="card-body">
-                        <p class="card-text">"He comprado varias veces en FitShop y siempre he quedado satisfecho. Los productos llegaron a tiempo, en perfectas condiciones y con una excelente calidad. ¡Totalmente recomendado!"</p>
-                        <footer class="blockquote-footer">Juan Pérez <cite title="Fuente">Cliente Satisfecho</cite></footer>
-                    </div>
-                </div>
-            </div>
-            <!-- Testimonio 2 -->
-            <div class="col-lg-4 mb-4">
-                <div class="card text-center shadow-sm">
-                    <div class="card-body">
-                        <p class="card-text">"Mi experiencia con FitShop ha sido increíble. Compré mis suplementos y ropa deportiva, y todo llegó dentro del plazo estipulado. La calidad es excelente y volveré a comprar sin duda."</p>
-                        <footer class="blockquote-footer">María Gómez <cite title="Fuente">Deportista Profesional</cite></footer>
-                    </div>
-                </div>
-            </div>
-            <!-- Testimonio 3 -->
-            <div class="col-lg-4 mb-4">
-                <div class="card text-center shadow-sm">
-                    <div class="card-body">
-                        <p class="card-text">"FitShop es mi tienda online favorita. Compré una proteína y unas zapatillas, y el pedido llegó en perfecto estado y a tiempo. ¡Excelente servicio y productos de gran calidad!"</p>
-                        <footer class="blockquote-footer">Carlos Rodríguez <cite title="Fuente">Entrenador Personal</cite></footer>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<section>
+	
 </section>
 
 
 
-
-<!-- Sección de Blog -->
-<section class="py-5">
-    <div class="container">
-        <h2 class="text-center mb-4">Nuestro Blog Deportivo</h2>
-        <div class="row">
-            <!-- Blog 1 -->
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img class="card-img-top" src="https://via.placeholder.com/500x300?text=Blog+Deportivo+1" alt="Blog Deportivo 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Cómo mejorar tu rendimiento en el gimnasio</h5>
-                        <p class="card-text">Aprende los mejores consejos y estrategias para llevar tu entrenamiento al siguiente nivel. ¡Mejora tu fuerza y resistencia con estos simples trucos!</p>
-                        <a href="#" class="btn btn-primary">Leer más</a>
-                    </div>
-                    <div class="card-footer text-muted text-center">
-                        Publicado el 1 de diciembre de 2024
-                    </div>
-                </div>
-            </div>
-            <!-- Blog 2 -->
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img class="card-img-top" src="https://via.placeholder.com/500x300?text=Blog+Deportivo+2" alt="Blog Deportivo 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Alimentos que te ayudan a rendir mejor en tus entrenamientos</h5>
-                        <p class="card-text">Descubre los alimentos más eficaces para mejorar tu energía, resistencia y recuperación durante los entrenamientos. La nutrición es clave para el éxito deportivo.</p>
-                        <a href="#" class="btn btn-primary">Leer más</a>
-                    </div>
-                    <div class="card-footer text-muted text-center">
-                        Publicado el 28 de noviembre de 2024
-                    </div>
-                </div>
-            </div>
-            <!-- Blog 3 -->
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img class="card-img-top" src="https://via.placeholder.com/500x300?text=Blog+Deportivo+3" alt="Blog Deportivo 3">
-                    <div class="card-body">
-                        <h5 class="card-title">La importancia de los estiramientos antes y después de entrenar</h5>
-                        <p class="card-text">Evita lesiones y mejora tu flexibilidad con una rutina de estiramientos adecuada. Te contamos por qué y cómo realizarlos correctamente para aprovechar al máximo tu entrenamiento.</p>
-                        <a href="#" class="btn btn-primary">Leer más</a>
-                    </div>
-                    <div class="card-footer text-muted text-center">
-                        Publicado el 20 de noviembre de 2024
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<a href="https://wa.me/598099946914
+?text=Hola,me gustaria una pagina web." class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
 
 
-<!-- Sección de redes sociales -->
-<section class="py-5 bg-dark text-center">
-    <h3 class="text-white">¡Síguenos en nuestras redes sociales!</h3>
-    <div class="d-flex justify-content-center">
-        <a href="#" class="btn btn-outline-light btn-lg m-2"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="btn btn-outline-light btn-lg m-2"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="btn btn-outline-light btn-lg m-2"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="btn btn-outline-light btn-lg m-2"><i class="bi bi-youtube"></i></a>
-    </div>
-</section>
+    <!-- ========================  
+    Syed Sahar Ali Raza   	 
+  ========================	!-->
 
-<!-- Footer -->
-<footer class="py-5 bg-dark text-white text-center">
-    <p>&copy; 2024 FitShop. Todos los derechos reservados.</p>
-</footer>
+ 
+	
 
-<!-- Bootstrap core JS-->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
-</body>
+   
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/Headroom.js"></script>
+    <script src="js/jQuery.headroom.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/custom.js"></script>
+
+
+
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</div></div></section></body>
 </html>
